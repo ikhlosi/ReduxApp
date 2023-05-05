@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 import { Provider } from "react-redux";
 import PostsList from "./src/features/PostsList";
 import store from "./src/store";
+import AddPostForm from "./src/features/posts/AddPostForm";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <View style={styles.container}>
         <Text>Posts:</Text>
         <PostsList />
+        <AddPostForm />
       </View>
     </Provider>
   );
